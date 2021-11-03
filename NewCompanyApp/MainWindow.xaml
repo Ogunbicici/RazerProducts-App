@@ -1,0 +1,20 @@
+﻿<Window x:Class="NewCompanyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewCompanyApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Image Source="/razer-logo.png" Margin="350,40,350,299"  ></Image>
+        <Label Foreground="Black" Content="Razer" FontSize="35" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="158" BorderBrush="White" FontFamily="Arial Black"/>
+        <Button Name="LoginScreenBtn" Click="Login_Click" Content="Login" HorizontalAlignment="Left" Margin="200,183,0,0" VerticalAlignment="Top" Height="29" Width="116" Background="#00DDDDDD" Foreground="Black"/>
+        <Button Click="ViewProducts_Click" Content="View Products" HorizontalAlignment="Left" Margin="484,183,0,0" VerticalAlignment="Top" Height="29" Width="116" Foreground="Black" Background="#00DDDDDD"/>
+        <Button Name="AddProductBtn" IsEnabled="False" Click="AddProduct_Click" Content="Add Product" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Height="29" Width="116" Foreground="Black" Background="#00DDDDDD"/>
+        <Button Click="Exit_Click" Content="Exit" HorizontalAlignment="Center" Margin="0,282,0,0" VerticalAlignment="Top" Height="29" Width="80" Background="Transparent" Foreground="Black"/>
+        <Label Name="UserNameLbl" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="694,18,0,0" VerticalAlignment="Top" Width="85" Height="30"/>
+        <Label Content="Your username:" FontFamily="bold" HorizontalAlignment="Left" Margin="576,20,0,0" VerticalAlignment="Top" Width="113" Height="26" FontSize="15"/>
+    </Grid>
+</Window>
